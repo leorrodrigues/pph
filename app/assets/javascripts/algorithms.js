@@ -275,6 +275,7 @@ function ExecutaBFS(){
     mapa.metodo="bfs";
     var fronteira=[];
     var visitados=[];
+    
     var verificando;
     var inicial=mapa.terreno[mapa.inicio_x+mapa.inicio_y*mapa.tamanho_x];
     mapa.terreno[mapa.inicio_x+mapa.inicio_y*mapa.tamanho_x].tipo=1;

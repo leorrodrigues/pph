@@ -30,6 +30,9 @@
         <%= f.file_field :map_file, id: :map_file, multiple: false%>
     </div>
     <div class="actions">
-        <%= f.submit "Alterar o mapa", :onclick => "GeraMapa();"%>
+        <table>
+            <td><%= f.submit "Alterar o mapa", :onclick => "GeraMapa();"%></td>
+            <td><%= f.submit "Resetar mapa(default)", :onclick => "ResetaMapa();"%></td>
+        </table>
     </div>
 <%end%>

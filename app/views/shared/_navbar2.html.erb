@@ -16,6 +16,7 @@
             <li class="active"><%= link_to 'Página inicial', root_path, :class => 'home_links'%></li>
             <% if user_signed_in? %>
                 <li> <%= link_to "Algoritmos", algorithms_index_path, :method => :get, :class => 'home_links'%></li>
+                <li> <%= link_to "Sobre os desenvolvedores",home_about_path, :method=> :get, :class=> 'home_links'%></li> 
             <% end %>
         </ul>
         <ul class="nav navbar-nav navbar-right white">
